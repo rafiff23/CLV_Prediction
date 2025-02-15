@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd
 import pickle
 import os
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
 
 # Main title
 st.title('Customer Lifetime Value Predictor')
