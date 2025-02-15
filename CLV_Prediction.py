@@ -7,7 +7,7 @@ import os
 print("Current working directory:", os.getcwd())
 
 # Main title
-st.title('Customer Lifetime Value Predictor')
+st.title('Customer Lifetime Value Predictor 2')
 st.text('This web app can be used to predict your CLV (Customer Lifetime Value)')
 
 # Sidebar header for user input
