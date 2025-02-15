@@ -39,7 +39,7 @@ def create_user_input():
         'Vehicle Class': vehicle_class,
         'Coverage': coverage,
         'Renew Offer Type': renew_offer_type,
-        'Employment Status': employment_status,
+        'EmploymentStatus': employment_status,
         'Marital Status': marital_status,
         'Education': education
     }
