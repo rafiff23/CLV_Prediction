@@ -61,7 +61,7 @@ with col1:
     st.write(data_customer.transpose())
 
 # Load model
-with open('/mount/src/clv_model.pkl', 'rb') as f:
+with open(r'/mount/src/clv_model.pkl', 'rb') as f:
     model_loaded = pickle.load(f)
     
 # Predict on the user input data
