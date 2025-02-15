@@ -3,6 +3,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import os
+print("Current working directory:", os.getcwd())
 
 # Main title
 st.title('Customer Lifetime Value Predictor')
