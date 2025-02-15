@@ -61,21 +61,14 @@ with col1:
     st.write(data_customer.transpose())
 
 # Load model
+# Load the model
 with open(r'clv_model.pkl', 'rb') as f:
     model_loaded = pickle.load(f)
     
 # Predict on the user input data
-predicted_class = model_loaded.predict(data_customer)
-prediction_proba = model_loaded.predict_proba(data_customer)[0]  # Get the probabilities for the classes
+predicted_clv = model_loaded.predict(data_customer)  # Get the predicted CLV value
 
 # Display the prediction result on the right column
 with col2:
     st.subheader('Prediction Result')
-    if predicted_class == 1:
-        st.write('Class 1: This customer is predicted to have high CLV (valuable customer)')
-    else:
-        st.write('Class 2: This customer is predicted to have low CLV')
-
-    # Display the probability of high CLV (Class 1)
-    st.write(f"Probability of High CLV: {prediction_proba[1]:.2f}")  # Probability for class 1 (high CLV)
-
+    st.write(f"Predicted Customer Lifetime Value (CLV): ${predicted_clv[0]:,.2f}")  # Display predicted CLV
