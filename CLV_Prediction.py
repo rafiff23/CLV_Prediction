@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 import pickle
 import os
-print("Current working directory:", os.getcwd())
+st.write("Current working directory:", os.getcwd())
 
 # Main title
-st.title('Customer Lifetime Value Predictor 2')
+st.title('Customer Lifetime Value Predictor')
 st.text('This web app can be used to predict your CLV (Customer Lifetime Value)')
 
 # Sidebar header for user input
