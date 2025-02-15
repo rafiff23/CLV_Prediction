@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import os
-import sklearn
 # st.write("Current working directory:", os.getcwd())
 
 # Main title
