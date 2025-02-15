@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import os
-st.write("Current working directory:", os.getcwd())
+# st.write("Current working directory:", os.getcwd())
 
 # Main title
 st.title('Customer Lifetime Value Predictor')
@@ -61,7 +61,7 @@ with col1:
     st.write(data_customer.transpose())
 
 # Load model
-with open('clv_model.pkl', 'rb') as f:
+with open('/mount/src/clv_model.pkl', 'rb') as f:
     model_loaded = pickle.load(f)
     
 # Predict on the user input data
